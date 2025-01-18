@@ -30,7 +30,7 @@ The dataset `moteurs_structured.csv` contains the following columns:
 - `Inductance (mH)`: Inductance of the motor
 - `Vitesse nominale (RPM)`: Nominal speed of the motor
 - `Couple maximal (Nm)`: Maximum torque of the motor
- ![Texte alternatif](1.jpg)
+ ![Texte alternatif](1.png)
 
 ## Steps
 
@@ -41,13 +41,13 @@ The dataset `moteurs_structured.csv` contains the following columns:
 3. **Separate features and target**: Split the dataset into features (`X`) and target (`y`).
 4. **Train-Test Split**: Split the data into training (80%) and testing (20%) sets.
 5. **Display statistical summary**: Show a summary of the dataset.
- ![Texte alternatif](2.jpg)
+ ![Texte alternatif](2.png)
 
 ### Exercice 2: k-NN Model Implementation
 
 1. **Import the k-NN classifier**: Create a k-NN model with `k=3`.
 2. **Train the model**: Fit the k-NN model to the training data.
- ![Texte alternatif](3.jpg)
+ ![Texte alternatif](3.png)
 
 ### Exercice 3: Model Evaluation
 
@@ -55,31 +55,31 @@ The dataset `moteurs_structured.csv` contains the following columns:
 2. **Confusion Matrix**: Generate a confusion matrix to assess the classification performance.
 3. **Evaluation metrics**: Display precision, recall, and F1-score for each class.
 4. **Interpretation**: Analyze the results from the confusion matrix and classification report.
- ![Texte alternatif](4.jpg)
+ ![Texte alternatif](4.png)
 
 ### Exercice 4: Visualizing Model Performance
 
 1. **Feature Reduction**: Reduce the data to two main features (e.g., resistance and torque).
 2. **Scatter Plot**: Plot the data points with different colors based on the predicted class.
 3. **Misclassified Points**: Annotate misclassified data points on the plot.
- ![Texte alternatif](5.jpg)
+ ![Texte alternatif](5.png)
 
 ### Exercice 5: Linear Regression Comparison
 
 1. **Linear Regression Model**: Train a multiple linear regression model using the same features.
 2. **Model Evaluation**: Evaluate the linear regression model's performance using Mean Squared Error (MSE) and R².
 3. **Comparison**: Compare the performance of k-NN and linear regression in terms of classification accuracy and suitability for the problem.
- ![Texte alternatif](5.jpg)
+ ![Texte alternatif](6.png)
 
 ## Results
 
 - The final k-NN model will be able to classify motors into the correct types.
 - A confusion matrix and classification report will show the precision and errors made by the k-NN model.
- ![Texte alternatif](6.1.jpg)
+ ![Texte alternatif](6.1.png)
 - Visualizations will help understand the distribution and misclassification of data points.
- ![Texte alternatif](6.2.jpg)
+ ![Texte alternatif](6.2.png)
 - A comparison of k-NN and linear regression will demonstrate which model is more appropriate for this classification task.
- ![Texte alternatif](6.3.jpg)
+ ![Texte alternatif](6.3.png)
 
 ## Conclusion
 
