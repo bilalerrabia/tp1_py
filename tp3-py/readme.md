@@ -1,80 +1,88 @@
-# README for k-Nearest Neighbors (k-NN) and Linear Regression Project
+Here is the updated README file based on the new guidelines provided for the project:
 
-## Project Overview
-This project implements a machine learning workflow to classify different types of electric motors using the **k-Nearest Neighbors (k-NN)** algorithm and compares its performance with **linear regression**. The dataset contains motor parameters such as resistance, inductance, nominal speed, and maximum torque, as well as their corresponding motor types.
+---
 
-## Dataset
-The dataset file is named `moteurs_structured.csv` and contains the following columns:
-- **Type de moteur**: The type of motor (e.g., "DC", "Asynchrone", "Pas-à-pas").
-- **Résistance (ohms)**: Electrical resistance in ohms.
-- **Inductance (mH)**: Electrical inductance in millihenries.
-- **Vitesse nominale (RPM)**: Nominal speed in revolutions per minute.
-- **Couple maximal (Nm)**: Maximum torque in newton-meters.
+# Motor Type Classification with k-Nearest Neighbors (k-NN)
 
-## Project Workflow
+This project aims to classify electric motor types based on their characteristics (resistance, inductance, nominal speed, and maximum torque) using the k-Nearest Neighbors (k-NN) algorithm. The goal is to create a supervised classification model that identifies the type of motor, with possible categories being "DC", "Asynchrone", and "Pas-à-pas".
 
-### 1. Data Loading and Preparation
-- Load the dataset using `pandas`.
-- Encode the motor types into numerical values using `LabelEncoder`.
-- Split the data into training (80%) and testing (20%) sets.
-- Features: `Résistance (ohms)`, `Inductance (mH)`, `Vitesse nominale (RPM)`, `Couple maximal (Nm)`.
-- Target: Encoded values of `Type de moteur`.
+## Requirements
 
-### 2. k-NN Model Implementation
-- Create a k-NN classifier with `k=3` using `Scikit-learn`.
-- Train the model on the training set.
+To run the code, you will need the following Python libraries:
 
-### 3. Model Evaluation
-- Predict motor types using the test set.
-- Generate a confusion matrix to evaluate performance.
-- Compute precision, recall, and F1-score for classification performance.
+- pandas
+- numpy
+- scikit-learn
+- seaborn
+- matplotlib
 
-### 4. Visualization
-- Visualize the data by reducing features to two dimensions (`Résistance` and `Couple maximal`).
-- Plot the data points with colors representing different classes.
-- Highlight misclassified points in red.
+To install these dependencies, you can use the following command:
 
-### 5. Linear Regression Comparison
-- Train a linear regression model using the same training data.
-- Predict using the test data and evaluate performance using:
-  - Mean Squared Error (MSE).
-  - Coefficient of determination (R²).
-- Compare the results of linear regression with k-NN.
-
-## Prerequisites
-Ensure the following Python libraries are installed:
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `scikit-learn`
-
-Install them using:
 ```bash
-pip install pandas numpy matplotlib scikit-learn
+pip install pandas numpy scikit-learn seaborn matplotlib
 ```
 
-## How to Run the Code
-1. Place the `moteurs_structured.csv` file in the same directory as the Python script.
-2. Run the Python script using:
-   ```bash
-   python tp3_code.py
-   ```
-3. The script will:
-   - Display evaluation metrics for the k-NN model.
-   - Visualize the classification results.
-   - Print MSE and R² for the linear regression model.
+## Dataset
+The dataset `moteurs_structured.csv` contains the following columns:
 
-## Expected Outputs
-1. **Confusion Matrix**: Shows the distribution of true vs predicted labels.
-2. **Classification Report**: Includes precision, recall, and F1-score.
-3. **Visualization**: A scatter plot showing data points and misclassified examples.
-4. **Regression Metrics**: MSE and R² values for linear regression.
+- `Type de moteur`: Motor type (target variable), with values: "DC", "Asynchrone", "Pas-à-pas"
+- `Résistance (ohms)`: Resistance of the motor
+- `Inductance (mH)`: Inductance of the motor
+- `Vitesse nominale (RPM)`: Nominal speed of the motor
+- `Couple maximal (Nm)`: Maximum torque of the motor
+ ![Texte alternatif](1.jpg)
 
-## Notes
-- Ensure the column names in the dataset match exactly as listed above.
-- The k-NN algorithm is more suitable for this classification task than linear regression.
-- Experiment with different values of `k` to see how the model performance changes.
+## Steps
 
-## Author
-This project was developed as part of a machine learning tutorial focusing on supervised classification and comparison with regression techniques.
+### Exercice 1: Data Loading and Preparation
 
+1. **Load the dataset**: Load `moteurs_structured.csv` using pandas.
+2. **Encode the motor types**: Use LabelEncoder to convert the motor types into numerical values.
+3. **Separate features and target**: Split the dataset into features (`X`) and target (`y`).
+4. **Train-Test Split**: Split the data into training (80%) and testing (20%) sets.
+5. **Display statistical summary**: Show a summary of the dataset.
+ ![Texte alternatif](2.jpg)
+
+### Exercice 2: k-NN Model Implementation
+
+1. **Import the k-NN classifier**: Create a k-NN model with `k=3`.
+2. **Train the model**: Fit the k-NN model to the training data.
+ ![Texte alternatif](3.jpg)
+
+### Exercice 3: Model Evaluation
+
+1. **Make predictions**: Predict the labels for the test set.
+2. **Confusion Matrix**: Generate a confusion matrix to assess the classification performance.
+3. **Evaluation metrics**: Display precision, recall, and F1-score for each class.
+4. **Interpretation**: Analyze the results from the confusion matrix and classification report.
+ ![Texte alternatif](4.jpg)
+
+### Exercice 4: Visualizing Model Performance
+
+1. **Feature Reduction**: Reduce the data to two main features (e.g., resistance and torque).
+2. **Scatter Plot**: Plot the data points with different colors based on the predicted class.
+3. **Misclassified Points**: Annotate misclassified data points on the plot.
+ ![Texte alternatif](5.jpg)
+
+### Exercice 5: Linear Regression Comparison
+
+1. **Linear Regression Model**: Train a multiple linear regression model using the same features.
+2. **Model Evaluation**: Evaluate the linear regression model's performance using Mean Squared Error (MSE) and R².
+3. **Comparison**: Compare the performance of k-NN and linear regression in terms of classification accuracy and suitability for the problem.
+ ![Texte alternatif](5.jpg)
+
+## Results
+
+- The final k-NN model will be able to classify motors into the correct types.
+- A confusion matrix and classification report will show the precision and errors made by the k-NN model.
+ ![Texte alternatif](6.1.jpg)
+- Visualizations will help understand the distribution and misclassification of data points.
+ ![Texte alternatif](6.2.jpg)
+- A comparison of k-NN and linear regression will demonstrate which model is more appropriate for this classification task.
+ ![Texte alternatif](6.3.jpg)
+
+## Conclusion
+
+By completing this project, we will gain hands-on experience in applying the k-NN algorithm for classification tasks, evaluating model performance, and comparing it with other machine learning models such as linear regression. This project will also help we better understand classification tasks in the context of mechatronics.
+
+---
