@@ -26,7 +26,7 @@ Avant de commencer, assurez-vous d'avoir installé les bibliothèques nécessair
 ```bash
 pip install numpy pandas matplotlib seaborn
 ```
- ![Texte alternatif](1.png)
+ ![Texte alternatif](photos/1.png)
 ---
 
 ## **Exercices**
