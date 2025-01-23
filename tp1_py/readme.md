@@ -33,32 +33,32 @@ pip install numpy pandas matplotlib seaborn
 
 ### **Exercice 1 : Chargement et inspection des données**
 1. Charger le dataset Iris avec **Seaborn**.
-  ![Texte alternatif](2.png)
+  ![Texte alternatif](photos/2.png)
 2. Explorer les données avec `head()`, `info()` et `describe()`.
-  ![Texte alternatif](3.png)
+  ![Texte alternatif](photos/3.png)
 3. Identifier le nombre d'échantillons et les classes de fleurs.
-  ![Texte alternatif](4.png)
+  ![Texte alternatif](photos/4.png)
 
 ---
 ### **Exercice 2 : Exploration des données**
 1. Filtrer les échantillons où `petal_length > 4`.
 2. Ajouter une colonne `petal_ratio` calculée comme le ratio entre `petal_length` et `petal_width`.
 3. Grouper les données par espèce et calculer les moyennes des colonnes numériques.
-  ![Texte alternatif](5.png)
+  ![Texte alternatif](photos/5.png)
 
 ---
 ### **Exercice 3 : Visualisation des données**
 1. Créer un histogramme des longueurs de sépales avec **Seaborn**.
 2. Réaliser un nuage de points illustrant la relation entre `sepal_length` et `petal_length`, coloré par espèce.
 3. Générer une matrice de corrélation et la visualiser sous forme de carte thermique avec **Seaborn**.
-  ![Texte alternatif](6.png)
+  ![Texte alternatif](photos/6.png)
 
 ---
 ### **Exercice 4 : Nettoyage des données**
 1. Simuler des valeurs manquantes dans la colonne `sepal_width`.
 2. Remplacer les valeurs manquantes par la moyenne de la colonne.
 
-  ![Texte alternatif](7.png)
+  ![Texte alternatif](photos/7.png)
 ---
 
 ## **Résultats attendus**
@@ -72,14 +72,14 @@ pip install numpy pandas matplotlib seaborn
    - Nuage de points montrant la relation entre `sepal_length` et `petal_length`, coloré par espèce.
    - Matrice de corrélation illustrant les relations entre les variables numériques.
      
-  ![Texte alternatif](8.1.png)
+  ![Texte alternatif](photos/8.1.png)
 
-  ![Texte alternatif](8.2.png)
+  ![Texte alternatif](photos/8.2.png)
   
 3. **Améliorations visuelles** :
    - Ajouter des titres, des légendes et des annotations pour rendre les graphiques compréhensibles.
 
-  ![Texte alternatif](9.png)
+  ![Texte alternatif](photos/9.png)
 ---
 ## **Auteur**
 **BILAL ERRABIA**
