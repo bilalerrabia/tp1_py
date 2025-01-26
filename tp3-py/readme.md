@@ -55,31 +55,33 @@ The dataset `moteurs_structured.csv` contains the following columns:
 2. **Confusion Matrix**: Generate a confusion matrix to assess the classification performance.
 3. **Evaluation metrics**: Display precision, recall, and F1-score for each class.
 4. **Interpretation**: Analyze the results from the confusion matrix and classification report.
- ![Texte alternatif](photos/4.png)
 
+ ![Texte alternatif](photos/4.png)
 ### Exercice 4: Visualizing Model Performance
 
 1. **Feature Reduction**: Reduce the data to two main features (e.g., resistance and torque).
 2. **Scatter Plot**: Plot the data points with different colors based on the predicted class.
 3. **Misclassified Points**: Annotate misclassified data points on the plot.
- ![Texte alternatif](photos/5.png)
 
+ ![Texte alternatif](photos/5.png)
 ### Exercice 5: Linear Regression Comparison
 
 1. **Linear Regression Model**: Train a multiple linear regression model using the same features.
 2. **Model Evaluation**: Evaluate the linear regression model's performance using Mean Squared Error (MSE) and R².
 3. **Comparison**: Compare the performance of k-NN and linear regression in terms of classification accuracy and suitability for the problem.
- ![Texte alternatif](photos/6.png)
 
+ ![Texte alternatif](photos/6.png)
 ## Results
 
 - The final k-NN model will be able to classify motors into the correct types.
-- A confusion matrix and classification report will show the precision and errors made by the k-NN model.
  ![Texte alternatif](photos/6.1.png)
+- A confusion matrix and classification report will show the precision and errors made by the k-NN model.
 - Visualizations will help understand the distribution and misclassification of data points.
  ![Texte alternatif](photos/6.2.png)
 - A comparison of k-NN and linear regression will demonstrate which model is more appropriate for this classification task.
  ![Texte alternatif](photos/6.3.png)
+
+
 
 ## Conclusion
 
