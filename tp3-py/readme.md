@@ -48,31 +48,26 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 ---
 ### Exercice 2: k-NN Model Implementation
+ ![Texte alternatif](photos/3.png)
 1. **Import the k-NN classifier**: Create a k-NN model with the best k between`k=1 and k=21`.
 2. **Train the model**: Fit the k-NN model to the training data.
- ![Texte alternatif](photos/3.png)
 
 ### Exercice 3: Model Evaluation
+ ![Texte alternatif](photos/4.png)
 
 1. **Make predictions**: Predict the labels for the test set.
 2. **Confusion Matrix**: Generate a confusion matrix to assess the classification performance.
 3. **Evaluation metrics**: Display precision, recall, and F1-score for each class.
 4. **Interpretation**: Analyze the results from the confusion matrix and classification report.
 
- ![Texte alternatif](photos/4.png)
 ### Exercice 4: Visualizing Model Performance
+ ![Texte alternatif](photos/5.png)
 
 1. **Feature Reduction**: Reduce the data to two main features (e.g., resistance and torque).
 2. **Scatter Plot**: Plot the data points with different colors based on the predicted class.
 3. **Misclassified Points**: Annotate misclassified data points on the plot.
 
- ![Texte alternatif](photos/5.png)
 ### Exercice 5: Linear Regression Comparison
-
-1. **Linear Regression Model**: Train a multiple linear regression model using the same features.
-2. **Model Evaluation**: Evaluate the linear regression model's performance using Mean Squared Error (MSE) and R².
-3. **Comparison**: Compare the performance of k-NN and linear regression in terms of classification accuracy and suitability for the problem.
-
 ``` py
 logistic_model = LogisticRegression(max_iter=1000)
 logistic_model.fit(X_train_scaled, y_train)
@@ -81,6 +76,11 @@ y_pred_logistic = logistic_model.predict(X_test_scaled)
 
 print("\nRapport de classification (Régression logistique) :\n", classification_report(y_test, y_pred_logistic, target_names=label_encoder.classes_))
 ```
+
+1. **Linear Regression Model**: Train a multiple linear regression model using the same features.
+2. **Model Evaluation**: Evaluate the linear regression model's performance using Mean Squared Error (MSE) and R².
+3. **Comparison**: Compare the performance of k-NN and linear regression in terms of classification accuracy and suitability for the problem.
+
 ## Results
 
 - The final k-NN model will be able to classify motors into the correct types.
