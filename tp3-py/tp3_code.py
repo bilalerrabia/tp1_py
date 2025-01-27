@@ -90,7 +90,7 @@ plt.ylabel("Couple maximal (Nm)")
 plt.legend()
 plt.show()
 
-# ----------- Exercice 5: Linear Regression Comparison -----------
+# Exercice 5:
 
 linear_model = LinearRegression()
 linear_model.fit(X_train_scaled, y_train)
